@@ -20,7 +20,7 @@
     
 .header-logo {
     border-right: none;
-    max-height: 100px;
+    max-height: 100px; 
     padding-right: 5px;
 }
 .header-logo img {
@@ -46,9 +46,6 @@
     font-size: 34px;
     font-size: 25px;
     font-weight: bold;
-    /*text-shadow: 2px 4px 3px rgba(0,0,0,0.3);*/
-    /*text-shadow: 6px 6px 0px rgba(0,0,0,0.2);*/
-    /*text-shadow: 3px 3px 0px #fff, 7px 7px 0px rgba(0,0,0,0.15);*/
     
     font-family: 'Roboto Slab';
     color: #246b07;
@@ -64,7 +61,6 @@
     font-size: 12px;
     letter-spacing: 1px;
     transition: all .3s ease;
-    /*padding: 5px 10px;*/
     color: #fff;
     margin-left: 10px;
     margin-top: 5px;
@@ -85,9 +81,6 @@
   background-color: #d7654a;
 border-color: #d7654a;
 }
-
-/*search box*/
-/* Styles for wrapping the search box */
 
 .main {
     /*width: 50%;*/
@@ -130,8 +123,6 @@ border-color: #d7654a;
     .header-logo {
         width: 100% ;   
     }
-
-    
     .header-logo img{
         vertical-align: top;
         display: inline-block;
@@ -148,12 +139,9 @@ border-color: #d7654a;
     .header-logo .ius-name-header span{
         font-size: 20px !important;
     }
-
-
     .header-btn-style{
         font-size: 10px;
     }
-
     .search-input-group input {
         font-size: 11px;
     }
@@ -164,11 +152,9 @@ border-color: #d7654a;
      .ius-name-header{
         display: inline-block;
     }
-     
      .header-institute-name{
         font-size: 10px;
     }
-    
     .header-program-name{
         font-size: 17px;
     }
@@ -180,14 +166,11 @@ border-color: #d7654a;
     .header-logo .ius-name-header span {
         font-size: 17px !important;
     }
-    
-    
 }
 
 <?php if($is_child): ?>
  @media (max-width: 600px){
 .ius-name-header {
-   
     display: grid;
     }
     .nav:before
@@ -227,9 +210,6 @@ border-color: #d7654a;
                     <img class="img-responsive" src="<?php echo $logo; ?>" alt="<?php bloginfo( 'name' ); ?>" > 
                     </a>
                     <div class="ius-name-header">
-                        
-                       
-                        
                         <span class="header-institute-name"><?php bloginfo( 'description' ); ?>
                             <!--?php echo $part1;?-->
                         <br>
@@ -241,98 +221,23 @@ border-color: #d7654a;
                    
                 </div>
                 <?php else:?>
-                    <div class="col-md-7 col-sm-12 col-xs-12 header-logo media-text-center" title="<?php bloginfo( 'name' ); ?>">
-                    <a  href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php bloginfo( 'name' ); ?>"> 
-                    <img class="img-responsive" src="<?php echo $logo; ?>" alt="<?php bloginfo( 'name' ); ?>" > 
-                    </a>
-                    <div class="ius-name-header" style="margin-top: 5px;">
-                        <span>Bangladesh Army University
-                        <br>
-                        of Engineering & Technology
-                        </span>
-                    </div>
-                 
-                </div>
-        <?php  endif; ?>
-                <div class="col-md-5 col-sm-12 col-xs-12 text-right media-text-center">
-                    <div>
-                       <!-- <a href="http://bauet.ac.bd/oaf/" class="btn btn-danger header-btn-style " style="background-color: #e33535;border-color: #b00505;" title="Apply for Online Admission" >-->
-                       <!--Apply Online </a>-->
-                       
-                       <a href="http://bauet.ac.bd/oaf/" class="btn btn-danger header-btn-style " style="" title="Apply for Online Admission" >
-                       Apply Online </a>
-                       
-                        <!--<a href="http://bauet.ac.bd:2095/" class="btn btn-danger header-btn-style" target="_blank" title="Email Login on G-Suite">-->
-                        <!-- Webmail-->
-                        <!--</a>-->
-                        <!--<a href="#" class="btn btn-danger header-btn-style" target="_blank" title="Education Management System">-->
-                        <!-- Admission-->
-                        <!--</a>-->
-                        
-                          <form action="<?php echo esc_url( home_url( '/' ) ); ?>" style="display: inline-flex;">
-                             <div class="search-input-group1">
-  
-                              <!-- Actual search box -->
-                              <div class="form-group has-feedback has-search" style="display: inline-block;">
-                                <span class="glyphicon glyphicon-search form-control-feedback"></span>
-                                <input type="text" class="form-control" placeholder="Search" name="s" id="search_data">
-                              </div>
-                            </div>
-                            
-                    
-                    
-                    </form>
-                 
-                    
-                    <span class="mobile-menu sticky"  style="background: #071d63;
-                                    padding: 4px 12px;
-                                    color: #fff;
-                                    margin-top: 5px;
-                                    margin-bottom: 8px;
-                                    border-radius: 4px;
-                                    
-                                ">
-                        <div class="burger-menu">
-                            <div class="hamburger-inner"></div>
-                        </div>
-                        <!--<span style="color: #fff;">-->
-                        <!--     MENU-->
-                        <!--</span>-->
-                    </span>
-                    
-                    </div>
-                    <!-- search box  -->
-                    <!--<div id="search-box">-->
-                        
-                       
-                        
-                    <!--    <form action="<?php echo esc_url( home_url( '/' ) ); ?>" >-->
-                            <!-- <div class="search-input-group">-->
-  
-                            <!-- Actual search box -->
-                            <!--  <div class="form-group has-feedback has-search">-->
-                            <!--    <span class="glyphicon glyphicon-search form-control-feedback"></span>-->
-                            <!--    <input type="text" class="form-control" placeholder="Search">-->
-                            <!--  </div>-->
-                            <!--</div>-->
-                            
-                            <!--<div class="input-group search-input-group media-float-none">-->
-                            <!--    <input type="text" class="form-control" placeholder="Search Here" name="s" id="search_data" autocomplete="off">-->
-                            <!--</div>-->
-                            <!--<div class="input-group-btn search-btn">-->
-                            <!--    <button class="btn btn-default" type="submit">Search</button>-->
-                            <!--</div>-->
-                    
-                    <!--</form>-->
-                    <!--</div>-->
-                </div>
-                <div>
-                </div>
-            </div>
-            <!-- <div class="title" style="">
-                                    <?php bloginfo( 'name' ); ?>
-                                    <div class="caption" style="">
-                                        <?php bloginfo( 'description' ); ?>
+                                <div class="row header-area">
+                                    <div class="col-md-1 p-r-0">
+                                         <a  href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php bloginfo( 'name' ); ?>"> 
+                                         <img class="img-responsive logo" src="<?php echo $logo; ?>" alt="<?php bloginfo( 'name' ); ?>" >
+                                          </a>
                                     </div>
-                                </div> -->
+                                    <div class="col-md-11 p-l-0 header-title">
+                                        <div class="col-md-12">
+                                            <h2><?php echo get_bloginfo( 'name' ); ?></h2>
+                                            <p>UGC and Goverment Approved</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                    
+        <?php  endif; ?>
+            
+                </div>
+
 

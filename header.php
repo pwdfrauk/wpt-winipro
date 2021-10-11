@@ -137,189 +137,419 @@ body{
         background-size: contain;
     }
 <?php  endif; ?>    
-.header-top-bar
+
+/************************ start header style ***************************************/
+ .header-top {
+       overflow: hidden;
+
+    }
+    .header-top-area {
+      display: flex;
+      position: relative;
+    }
+    .top-socail-marquee-text {
+     width: calc(100% - 410px);
+    }
+    .top-social-icon {
+      width: 414px;
+    }
+    .customWidthtd .marquee {
+      height: 32px;
+    } 
+    .marqueecontent span i {
+      color:#ffffff;
+    }
+    .marqueetext-container {
+      border: 0px solid #e4e7ea4f;
+    }
+    /*marquee text are */
+    .top-bar-table {
+      border-collapse: none;
+    }
+    .marqueecontent {
+      position: relative;
+    height: 32px;
+  }
+.top-bar-table tbody tr,  .top-bar-table tbody td {
+  border :none;
+}
+#top-bar-notice .color {
+color: #e50505;
+color: #EB5767;
+}
+#top-bar-notice a 
 {
-     background-color: #07294d; /*#43215f;*/
-    background-color: #ebebeb;
+font-size: 12px;
+margin-top: 2px;
+display: inline-block;
 }
-.header-top-bar-line {
-    padding-bottom: 2px;
-    border-bottom: 2px solid #d9d9d9;
+#top-bar-notice a:hover {
+    color:#ffffff;
 }
-.header-top-bar-line {
-     padding-bottom: 0px; 
-    border-bottom: 0px solid #d9d9d9; 
-    border-bottom: 1px solid #bcbcbc;
-    box-shadow: 0 2px 2px rgba(0,0,0,0.176);
+.colWhite{
+    color: white !important;
 }
-
-#header-row .header-top-bar .col-md-8>span {
-    padding-left: 2px;
-    padding-right: 10px;
+.marqueecontent {
+  position: relative;
+  margin-left: 18px;
 }
-
-#header-row .row .top-bar-icon>a i {
-    border-radius: 50%;
-    width: 19px;
-    height: auto;
-    text-align: center;
-    font-size: 10px;
-    padding: 4px;
-    margin-left: 12px;
+.marq-notice-area {
+  width:100px;
 }
-
-
-#header-row .col-md-5 .bt-indigo {
-    color: white;
-}
-
-.header-top-bar .row .col-md-4 span {
-    color: white;
-}
-
-
-#top-bar-notice a {
-    color: #fff;
-    padding: 0px 15px;
-    font-size: 12px;
-}
-
-/*read more Button Style*/
-
-.read-more-btn {
-    height: auto;
-    text-transform: uppercase;
-    transition: all .3s ease;
-}
-
-.read-more-btn:hover {
-    transform: translate(0, -4px);
-    color: #fff;
-    background-color: #fd1361;
-    border-color: #fc0758;
-    text-decoration: none;
-    box-shadow: 0 6px 16px 0 rgba(253, 57, 122, .25) !important;
-}
-
-.dt-sc-button{
-    padding: 8px 45px 9px 7px !important;
-    font-size: 14px;
-    font-weight: bold;
-    text-transform: none;
-     font-size: 12px;
-    text-transform: uppercase;
-    padding: 8px 15px;
-    line-height: normal;
-    display: inline-block;
-    margin: 10px 0px 0px;
-    cursor: pointer;
-    outline: none;
-    position: relative;
+#triangle-bottomleft {
+       width: 14px;
+    height: 32px;
+    background: #544ea1;
+    position: absolute;
+    right: -7px;
+    top: 0;
     z-index: 1;
-    background: #051f30;
-    color: white;
+    transform: skewX(20deg);
+    border-right: 4px solid #fff;
+}
+.titleBackForScroll  a{
+text-decoration:none;
 }
 
-.dt-sc-button:hover{
-    background: #1c3f55;
-    color: #ffffff;
+/*    blink effect   */
+.blink {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: #ffbd05;
+    border-radius: 50%;
+    opacity: 0;
+    margin-right: 10px;
+    -webkit-animation: spinner .75s linear infinite;
+    animation: spinner 1s linear infinite;
+    transform: scale(50px, 7px);
+    left: 5px;
 }
-.dt-sc-button span {
-    width: 36px;
+    @keyframes  spinner {
+        0% {
+            -webkit-transform: scale(0);
+            transform: scale(0);
+        }
+        50% {
+            opacity: 1;
+        }
+    }
+
+/*  end blink effect */
+
+    .header-top-area ul {
+     list-style: none;
+     display: flex;
+     margin: 0;
+      z-index: 20
+    }
+    .header-top-area ul li {
+      padding: 0px 10px;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 12px;
+    }
+    .header-top-area ul li span {
+       color:rgba(255, 255, 255, .9);
+    }
+      .header-top-area ul li span:hover {
+          color:rgba(255, 255, 255, .7) !important;
+    }
+    .header-top-area .social-icons {
+      display: flex;
+      justify-content: flex-end;
+      color: #fff;
+      height: 32px;
+      position: absolute;
+      right: 0;
+     
+    }
+     .header-top-area .social-icons::after {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 32px;
+      background: #6c757d;
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 10;
+      transform: skewX(20deg);
+      border-left: 4px solid #fff;
+    }
+     .header-top-area ul li a span {
+      font-weight: 700;
+      font-size: 12px;
+     } 
+    .header-top-area ul li a span:hover {
+       color:rgba(255, 255, 255, 0.9);
+    }
+    .header-top-area .social-icons  .icons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+     .header-top-area .social-icons .top-header-link li {
+      font-size: 12px;
+      font-weight: 700;
+      border-right: 1px solid #bbbbbb;
+     }
+     .header-top-area .social-icons .top-header-link li a {
+      text-transform: uppercase;
+      color:rgba(255, 255, 255, .8);
+     }
+     .header-top-area .social-icons .top-header-link li a:hover {
+      color:rgba(255, 255, 255, .8);
+     }
+     .header-top-area .social-icons .top-header-link li a i,
+      .header-top-area .social-icons .top-header-link li i {
+      margin-right: 10px;
+      color: #ffffff;
+      font-weight: 700;
+      font-size: 12px;
+     }
+     .header-top-area .social-icons .top-header-link li:last-child {
+      margin-right: 0px;
+      padding-right: 18px;
+      padding-left: 18px;
+      background-color: #dc3545;
+    border-color: #dc3545;
+    border-right: 0px soid transform;
+     }
+    .header-top-area .social-icons .top-header-link li:last-child:hover {
+      background-color: #cb2939;
+     }
+    /* header */
+
+    header {
+      padding: 15px 0px;
+      background: #032159;
+    }
+    header .header-area {
+      display:flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .logo {
+      width: 90px;
+      height: auto;
+      border-radius: 50%;
+      border:1px solid rgba(16, 17, 21, 0.1);
+    }
+    .header-title {
+
+    }
+    .header-title h3 {
+      font-family: 'Monotype Corsiva';
+      font-size: 25px;
+      margin: 0px;
+      color:#D6F104;
+    }
+    .header-title h2 {
+      font-family: "Georgia";
+      font-size: 27px;
+      margin:0px;
+      font-weight: 600;
+      color: #ffffff;
+      line-height: 1.4;
+    }
+    .header-title p {
+      color: #ffba57;
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 0px;
+    }
+    /*white header*/
+    .header-top.white {
+      background-color: #150101;
+    }
+   .white .font-14 {
     font-size: 14px;
-     position: absolute;
-    right: 0px;
-    top: 0px;
-    bottom: 0px;
-    margin: auto;
-    height: 100%;
-    background: #fcdb34;
-    color: #000000;
-    text-align: center;
-}
-.dt-sc-button a:hover {
-    background: #051f30;
-}
-/*read more Button Style end*/
-
-.section-background {
-    background-color: transparent;
-    background-image: none;
+    color: white;
     }
-    
-    
-@media print {
-    a[href]:after {
-        content: none !important;
+    .white .header-top-area .contact-mail li i {
+    color: #ffffff;
     }
-}
-.the-content img, .the-content img[class*='wp-image-']
-{
-    max-width: 100%;
-    height: auto;
-    vertical-align: middle;
-    overflow:auto;
-}
-.back-to-top {
-    display: none;
-    cursor: pointer;
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    z-index: 20;
-    padding: 7px 10px;
-    background: #ffffff;
-    color: #313447;
-    opacity: 0.5;
-    box-shadow: 0px 0px 5px rgb(51, 51, 51);
-    box-shadow: 0px 0px 5px rgba(51, 51, 51, 0.7);
-}
-.author-header .bot-name {
-       height: 57px;
-}
-
-
-@media (max-width: 600px) {
-    .top-bar-table .left-td, .top-bar-table .right-td
+     header.white {
+      padding: 15px 0px;
+      background:white;
+    }
+    .white .header-title
     {
-        display: none;
+      margin-top: -16px;
     }
-    /*.nav>li {*/
-    /*position: relative;*/
-    /*display: inline-block;*/
-    /*width: 29%;*/
-    /*}*/
+   .white .header-title h3 {
+    color: #c60606;
+    }
+   .white .header-title h2
+   {
+
+    color: #115474;
+    text-align: left;
+   }
+   .main-menu
+   {
+    height: 40px;
+    background-color: #004ea2;
+        text-align: center;
+    }
+   .main-menu .menu-item
+   {
+    font-family:"Open Sans", sans-serif !important;
+    color: white;
+    padding: 17px;
+    line-height: 39px;
+    font-size: 17px;
+    color: white;
+   }
+
+   .HeadingTitleAll {
+    margin: 1em 0 0.5em 0;
+    color: #343434;
+    font-weight: normal;
+    font-family: 'Ultra', sans-serif;
+    font-size: 36px;
+    line-height: 42px;
+    text-transform: capitalize !important;
+    text-shadow: 0 2px white, 0 3px #777 !important;
+}
   
-    .header-logo {
-            max-height: none !important;
-    }
-    .header-btn-style{
-            margin-left: 5px !important;
-    }
-    .has-search .form-control {
-     width: 160px !important;
-    }
-    
-    .dropdown-plus{
-        top: -5px !important;
-        right: -38px !important;
-    }
-    .section-title-style h2 {
-   
-    font-size: 28px;
-    }
-    
+     @media only screen and (max-width:1024px)  {
+       .md-flex {
+      display: flex;
+      }
+      .header-top-area ul li {
+      margin-right: 12px;
+      }
+     }
+     /* header top area */
+@media (max-width: 768px){
+    .top-social-icon {
+    width: auto;
+  }
+  .header-top-area ul li {
+    margin-right: 0px !important;
+ }
+
+
 }
-#mega-menu-wrap-Top #mega-menu-Top > li.mega-menu-item > a.mega-menu-link {
-    padding: 0px 5px 0px 5px;
+@media only screen and (max-width:576px) {
+   .header-top-area  { 
+    display: block;
+  }
+  .top-socail-marquee-text {
+    width:100%;
+ }
+ .header-top-area ul li a span {
+  font-size:10px !important;
+ }
+ .header-top-area .social-icons .top-header-link li i {
+  font-size: 10px !important;
+ }
+  .header-top-area .social-icons {
+    position: relative !important;
+    height: 26px;
+  }
+  #top-bar-notice a  {
+    font-size: 10px;
+  }
+  .mparquee-icon i {
+    font-size: 10px;
+    color:#ffffff;
+  }
+  .marquee-notice-text { font-size: 10px; }
+  .header-top-area .social-icons .top-header-link li:first-child {
+    padding-right: 15px;
+  }
+  #top-bar-notice a {
+    margin-top: 0px;
+  }
+  .header-top-area .social-icons .top-header-link li:nth-child(2) {
+    border-right: none;
+  }
+  .header-top-area ul {
+    width: 100% !important;
+    justify-content:space-between;
+  }
+   .header-top-area .social-icons::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 22px;
+    background: #6c757d;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    transform: none !important;
+    border-left: none !important;
 }
-#mega-menu-wrap-Top #mega-menu-Top > li.mega-menu-flyout ul.mega-sub-menu li.mega-menu-item a.mega-menu-link {
-    padding: 5px;
-    line-height: 1.4;
+  .header-top-area .social-icons {
+    height: 22px;
+  }
+  .marquee-row {
+    height: 23px;
+  }
+  .marqueecontent {
+    margin-top: -6px;
+  }
+  .blink {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+}
+  .header-top-area ul li {
+    margin-right: 0px !important;
+    line-height: 22px;
+}
+  .header-top-area .social-icons .top-header-link li:last-child {
+    margin-right: 0px;
+    padding-right: 10px !important;
+    padding-left: 8px !important;
+    border-left: 1px solid #bbbbbb;
+    }
+
 }
 
 
-</style>
+
+    @media only screen and (max-width:768px) {
+       /* header logo and title area  */
+       .logo {
+        width:75px;
+      }
+      .header-title h2 {
+        font-size: 20px;
+      }
+      .header-title p {
+        font-size:14px;
+      }
+
+
+    }
+     @media only screen and (max-width:576px)  {
+      .header-top  {
+        height: 100%;
+      }
+      .sm-flex-dir-col {
+        flex-direction: column;
+      }
+      /* header logo and title area  */
+      .logo {
+        width: 50px;
+      }
+      .header-title h2 {
+        font-size: 12px;
+      }
+      .header-title p {
+        font-size: 10px;
+      }
+    }
+
+
+/*********************************** end header style ***************************************/
 
 <style>
 /*Menu CSS*/
@@ -480,14 +710,6 @@ body{
 
 </style>
 
-
-
-
-
-
-
-
-
 </head>
 
 <body>
@@ -495,70 +717,70 @@ body{
     <!-- Header-top row start -->
 
     <section id="header-row">
-        <div class="header-top-bar header-top-bar-line">
-            <div class="container media-webkit-center">
-                <div class="row">
-                    <div class=" text-left media-text-center font12 media-font15" style="  margin: 0 15px;">
-                     
-                      <table  class="top-bar-table" style="width:100%">
-                      
-                          <tbody>
-                              <tr>
-                                  <td class="left-td" style="width: 344px;">
-                                  <div style="display: inline;"> <i class="fa fa-envelope black"></i>
-                                        <span class="black" style="padding-right: 10px;"> info@bauet.ac.bd</span>
-                                        
-                                         <i class="fa fa-phone black"></i>
-                                        <span class="black"> +8801708503504, +8801708503510</span>
-                                    </div>
-                                  </td>
-                                  <td class="middle-td1">
-                                  <div style="">
-                                    
-                                    </div>
-                                  </td>
-                                  <td class="right-td" style="">
-                                  <div class="top-bar-icon media-text-center float-right" style="">
-                                    <a href="https://www.facebook.com/bauetqadirabad/">
-                                        <i class="fa fa-facebook" style="color: blue; background-color: #f9f9f9;"></i> </a>
-                                    <!--<a href="https://twitter.com/bauetqadirabad/">-->
-                                    <!--    <i class="fa fa-twitter" style="color: white; background-color: #00aced;"></i> </a>-->
-                                    <!--<a href="https://plus.google.com/bauetqadirabad">-->
-                                    <!--    <i class="fa fa-google-plus" style="color: white; background-color: #ff3b00f0;"></i> </a>-->
-                                    <a href="https://www.youtube.com/bauetqadirabad/">
-                                        <i class="fa fa-youtube-play" style="color: white; background-color: #ff0000;"></i> </a>
-                                         | <a href="<?php echo get_site_url(); ?>/category/upcoming-events/">Upcoming Events</a> 
-                                         | <a href="<?php echo get_site_url(); ?>/category/news-events/">News Events</a> 
-                                         | <a href="<?php echo get_site_url(); ?>/category/notice/">Notice</a>  
-                                         | <a href="<?php echo get_site_url(); ?>/ieee-student-branch/">IEEE Student Branch</a>
-                                         | <a href="<?php echo get_site_url(); ?>/alumni/">Alumni</a> 
-                                         | <a href="https://webmail.bauet.ac.bd/">Webmail</a>
-                                </div>
+            <div class="header-top ">    
+        <div class="header-top-area">
+            <div class="top-socail-marquee-text">
+                <!-- start marquee text here  -->
+                <div class="marque-notice-section">
+                    <div class="media-webkit-center titleBackForScroll" style="
+                border: 0px;">
+                        <div class="row">
+                            <div class="marquee-row text-left media-text-center font12 media-font15 " style="">
+                                <table class="top-bar-table" style="width:100%">
+                                    <tbody>
+                                        <tr>
+                                            <td style=" background-color: #544ea1;" class="marq-notice-area">
+                                                <div class="marqueecontent"
+                                                    style="display: flex;justify-content: center; align-items: center; background-color: #544ea1">
+                                                    &nbsp;
+                                                    <span class="mparquee-icon"
+                                                        style="display: inline-block;font-size:12px;"><i
+                                                           class="fa fa-bullhorn colo"></i></span>&nbsp;
+                                                    <span class="marquee-notice-text"
+                                                        style="font-size: 12px;color: white;display: inline-block;font-weight: 700;">Notice
+                                                        :</span>
+                                                    <div id="triangle-bottomleft">&nbsp;</div>
+                                                </div>
+                                            </td>
 
-                                  </td>
-                              </tr>
-                          </tbody>
-                      </table>
+                                            <td class="middle-td customWidthtd">
+                                                <div style=" background-color:#6861BC;height: 32px;">
+                                                    <?php get_template_part( "components/home-list/top-notice", $name = "list"  );?>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
                     </div>
-
-
                 </div>
+                <!-- end marquer text here  -->
+            </div>
+            <div class="social-icons top-social-icon">
+                <ul class="top-header-link">
+                    <li class="font-14 top-tell-link"><i class="fa fa-phone" aria-hidden="true"><a
+                                href="tel:+88-01817600093" class="header-link font-14 top-login-button-link"></i>
+                        <span>+88-01817600093</span>
+                        </a></li>
+                    <li><a href="#" class="header-link font-14 top-login-button-link"><i class="fa fa-sign-in"
+                                aria-hidden="true"></i><span>i-EMS Login</span></a></li>
+                    <li> <span class="blink"></span><a href="#" class="header-link font-14 top-aplay-button-link">
+                            <!--  <i class="fa fa-sign-in" aria-hidden="true"></i> -->
+                            <span>Apply Online</span></a></li>
+                </ul>
             </div>
         </div>
+    </div>
 
-
-        <div class="container" style="margin-top: 5px; margin-bottom: 0px; margin-top: 15px;padding-bottom: 15px;">
+    <header class=" hidden1">
+        <div class="container">
         <?php 
-            // $is_dept = $uni_pro['opt-switch-dept'];
-            // if($is_dept==true): get_template_part( "components/header-child-site" );
-            // else: get_template_part( "components/header-main-site" );
-            // endif;
-
             get_template_part( "components/header-main-site" );
         ?>
            
         </div>
-    </section>
+    </header>
     <!-- Header-top row start -->
 
     <!-- === top menu start=== -->
@@ -566,34 +788,23 @@ body{
         <div class="container">
              <div class="row">
                 <div class="col-md-12">
-                     <div class="jsnav-header bg-light sticky-top">
-                <div class="jsnav-header-wrapper container">
-                    
-                    <!--<div class="logo font-weight-bold">-->
-                    <!--    <a href="#">DEMO</a>-->
-                    <!--</div> <!-- .logo -->
-                    
-                    <!--<div class="burger-menu">-->
-                    <!--    <div class="hamburger-inner"></div>-->
-                    <!--</div>-->
-                    
-                    <!-- .burger-menu -->
-                    
-                    
+                   <div class="jsnav-header bg-light sticky-top">
+                      <div class="jsnav-header-wrapper container">
+                  
                     <nav class="jsnav-menu">
                         
                         <?php 
-                                             $menu_args = array(
-                                              'menu'    => 'my-menu',
-                                              'theme_location' => 'my-menu',
-                                              'depth'    => 4,
-                                              'container'   => false,
-                                              'menu_class'   => '',
-                                              'fallback_cb'       => 'wp_navwalker::fallback',
-                                              'walker'    => new wp_navwalker()
-                                             );
-                                             wp_nav_menu($menu_args);
-                                            ?>
+                             $menu_args = array(
+                              'menu'    => 'my-menu',
+                              'theme_location' => 'my-menu',
+                              'depth'    => 4,
+                              'container'   => false,
+                              'menu_class'   => '',
+                              'fallback_cb'       => 'wp_navwalker::fallback',
+                              'walker'    => new wp_navwalker()
+                             );
+                             wp_nav_menu($menu_args);
+                            ?>
                         
                     </nav> <!-- nav -->
                 </div> <!-- .jsnav-header-wrapper -->
@@ -603,64 +814,8 @@ body{
             </div>
         </div>
     </section>
-    
-    
-
-    
-<!-- === top menu end=== -->
-     <!-- End Header Menu -->
- 
-<section class="marque-notice-section">  
-      <div class="container media-webkit-center" >
-                <div class="row">
-                    <div class="marque-bg text-left media-text-center font12 media-font15 " style=" ">
-                      <table  class="top-bar-table" style="width:100%">
-                          <tbody>
-                              <tr>
-                                  <td class="left-td" style="width: 130px;">
-                                  <div style="display: inline;"> 
-                                      <span><i class="fa fa-bullhorn"></i>&nbsp; <span class="" style="font-weight: bold;font-size: 13px;color: #650a0a;">Important Notice:</span></span>
-                                    </div>
-                                  </td>
-                                  <td class="middle-td">
-                                  <div style="">
-                                    <?php get_template_part( "components/home-list/top-notice", $name = "list"  );?>
-                                    </div>
-                                  </td>
-                                  <td class="right-td" style="width: 5px;">
-                                  </td>
-                              </tr>
-                          </tbody>
-                      </table>
-                    </div>
-                </div>
-            </div>
-    </section>
-<style>
-.marque-bg 
- {
-    margin: 0 15px; 
-    background-color: #868ced69;
-    border-bottom: 1px solid #5967ef;
-    padding-left: 10px;   
-    border-radius: 13px;
-    overflow: hidden;
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
- }
-
-</style>
 <?php if($is_child): ?>
-    <style>
-    .marque-notice-section .marque-bg 
-    {
-      background: -webkit-linear-gradient(left,rgb(149 147 231),rgb(144 43 43));
-    }
-    #top-bar-notice .color 
-    {
-      color:  white;
-    }
-    </style>
+   <!-- child style here  -->
 <?php else:?>
 <?php  endif; ?>
 
