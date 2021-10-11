@@ -5,7 +5,13 @@
 ?>
 
 <style>
-    #top-bar-notice .color {
+  .marqueetext {
+    color:#ffffff;
+  }
+  .marqueetext .marque-icon i {
+    color:#ffffff !Important;
+  }
+    /*#top-bar-notice .color {
     color: #e50505;
     color: #05154d;
    
@@ -15,10 +21,10 @@
     padding: 0px 15px;
     font-size: 13px;
     font-weight: bold;
-}
+}*/
 </style>
-  <marquee id="top-bar-notice" class="float-left" behavior="scroll" direction="left" height="29" 
-            scrolldelay="100" scrollamount="5" onmouseover="this.stop()" onmouseout="this.start()">
+  <marquee id="top-bar-notice" class=" marquee float-left"  behavior="scroll" direction="left" height="29" scrolldelay="100" 
+  scrollamount="5" onmouseover="this.stop()" onmouseout="this.start()">
         <?php
                 $notice_args = array(
                       'posts_per_page'   => -1,
@@ -46,9 +52,8 @@
                  if(count($notice_posts)>0) : 
                     foreach ( $notice_posts as $post ) : setup_postdata( $post );
             ?>
-            <!-- Notice 1 start -->
-            <a class="color" href="<?php echo get_permalink(); ?>" title="<?php echo get_the_title() ?>" target="_blank" rel="noopener noreferrer">
-            <i class="fa fa-bullhorn color"></i> <?php echo get_the_title() ?></a>
+              <a class="marqueetext" href="#" title="Important Notice" target="_blank" rel="noopener noreferrer">
+                                                            <span class="marque-icon"><i class="fa fa-bullhorn colo"></i></span> <?php echo get_the_title() ?></a>
             <?php endforeach; ?>
                 <?php else: ?>
                         <!-- There in no Top Notice. -->

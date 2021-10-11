@@ -34,7 +34,7 @@ CONTENTS
     --yellow: #ffc107;
     --green: #28a745;
     --teal: #20c997;
-    --cyan: #17a2b8;
+    --cyan: #17a2b8; 
     --white: #fff;
     --gray: #6f7a7f;
     --gray-dark: #343a40;
@@ -194,6 +194,59 @@ h4 {
     border-color: #183287;
     color: #fff;
 }
+/* baust golobal style */
+    ::-webkit-scrollbar {
+      width: 10px !important;
+    }
+    ::-moz-scrollbar {
+      width: 10px !important;
+    };
+/* Track */
+    ::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 5px grey !important; 
+      border-radius: 10px !important;
+    }
+    ::-moz-scrollbar-track {
+      box-shadow: inset 0 0 5px grey !important; 
+      border-radius: 10px !important;
+    }
+ 
+/* Handle */
+    ::-webkit-scrollbar-thumb {
+      background: #6861BC;
+      border-radius: 10px !important;
+    }
+    ::-moz-scrollbar-thumb {
+      background: #6861BC;
+      border-radius: 10px !important;
+    }
+
+/* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+      background:#6861BC !important; 
+    }
+    ::-moz-scrollbar-thumb:hover {
+      background:#6861BC !important; 
+    }
+
+ * {
+      margin:0;
+      padding: 0;
+    }
+    a {
+      text-decoration: none !important;
+    }
+    /* header-top */
+    .font-14 {
+      font-size: 14px;
+    }
+    .p-r-0 {
+      padding-right: 0px;
+    }
+    .p-l-0 {
+      padding-left: 0px;
+    }
+/* end baust golobal style */
 
 
 /* Start Mega menu css for ius */
