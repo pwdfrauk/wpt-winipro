@@ -1,0 +1,36 @@
+[06-Jun-2020 12:25:10 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/iusedubd/public_html/wp-content/themes/wpt-unipro-ius/index.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/iusedubd/public_html/wp-content/themes/wpt-unipro-ius/index.php on line 1
+[28-Dec-2020 07:38:59 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/baustnat/public_html/wp-content/themes/wpt-unipro-ius/index.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/baustnat/public_html/wp-content/themes/wpt-unipro-ius/index.php on line 1
+[28-Dec-2020 07:40:25 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/baustnat/public_html/wp-content/themes/wpt-unipro-ius/index.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/baustnat/public_html/wp-content/themes/wpt-unipro-ius/index.php on line 1
+[28-Dec-2020 07:41:05 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/baustnat/public_html/wp-content/themes/wpt-unipro-ius/index.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/baustnat/public_html/wp-content/themes/wpt-unipro-ius/index.php on line 1
+[26-Jan-2021 13:24:43 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/baustnat/public_html/wp-content/themes/wpt-unipro-ius/index.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/baustnat/public_html/wp-content/themes/wpt-unipro-ius/index.php on line 1
+[26-Jan-2021 13:24:55 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/baustnat/public_html/wp-content/themes/wpt-unipro-ius/index.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/baustnat/public_html/wp-content/themes/wpt-unipro-ius/index.php on line 1
+[26-Jan-2021 13:34:11 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/baustnat/public_html/wp-content/themes/wpt-unipro-ius/index.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/baustnat/public_html/wp-content/themes/wpt-unipro-ius/index.php on line 1
+[22-May-2021 10:43:13 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/baustnat/public_html/wp-content/themes/wpt-unipro-ius/404.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/baustnat/public_html/wp-content/themes/wpt-unipro-ius/404.php on line 1
+[12-Jul-2021 07:42:30 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/baustnat/public_html/wp-content/themes/wpt-unipro-ius/index.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/baustnat/public_html/wp-content/themes/wpt-unipro-ius/index.php on line 1
