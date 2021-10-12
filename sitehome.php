@@ -16,7 +16,7 @@
 ?>
     <!-- ========= slider section end ========= -->
     <!-- Start Html Section 1 -->
-    <?php 
+<?php 
 $pageIdHtmlSec_1 = $uni_pro['pageHtmlSec-1'];
 $isShowHtmlSec_1 = $uni_pro['btnHtmlSec-1'];
 //$Sec3Page = get_page($Sec3PageId); 
@@ -25,10 +25,13 @@ $isShowHtmlSec_1 = $uni_pro['btnHtmlSec-1'];
     <?php  echo getContentById($pageIdHtmlSec_1); ?>
     <?php endif; ?>
     <!-- End Html Section 1 -->
-</div>
+</div>academics-notice.php
+
+<!-- ============ academic ======================= -->
+<?php  get_template_part( "components/academics-notice" );?>
 
 <!-- =========  message section start  ============== -->
-<?php  get_template_part( "components/message-box" );?>
+<!-- ?php  get_template_part( "components/message-box" );?> -->
 <!-- <?php if(!$is_child): ?>
         <?php else:?><br /><br />
         <?php  endif; ?> -->
@@ -39,13 +42,18 @@ $isShowHtmlSec_1 = $uni_pro['btnHtmlSec-1'];
 <?php get_template_part( "components/home-list/news-event", $name = "list" ) ?>
 <!-- ---- news & event end---- -->
 
+<!-- ============ gallary ======================= -->
+<?php  get_template_part( "components/gallary" );?>
+
+<!-- ============ why we best ======================= -->
+<?php  get_template_part( "components/why-choice-us" );?>
 
 <!-- ====== People start =====  -->
-<!--?php get_template_part( "components/home-list/raw" ) ?>
+<!--?php get_template_part( "components/home-list/raw" ) ?>-->
 <!-- ====== People end =====  -->
 
 <!-- ---- facility start---- -->
-<?php get_template_part("components/home-list/facility-list") ?>
+<!-- ?php get_template_part("components/home-list/facility-list") ?> -->
 <!-- ---- facility end---- -->
 
 <!-- Start Html Section 2 -->
@@ -65,9 +73,9 @@ $isShowHtmlSec_2 = $uni_pro['btnHtmlSec-2'];
 
 <!-- ====== research-list start =====  -->
 <?php  
-            if(!$is_child): get_template_part( "components/home-list/research-list" );
+            // if(!$is_child): get_template_part( "components/home-list/research-list" );
             // else: get_template_part( "components/home-list/research-list" );
-            endif;
+            // endif;
 ?>
 <!-- ====== research-list end =====  -->
 

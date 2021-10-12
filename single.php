@@ -17,4 +17,4 @@
     </div>
 </section>
 
-<?php get_footer("no-sidebar"); ?>
+<?php get_footer("no-sidebar"); ?> 

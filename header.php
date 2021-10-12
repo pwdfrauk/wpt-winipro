@@ -98,12 +98,13 @@
    <!-- icons  -->
    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
    <!-- <link rel="stylesheet" href="<?php echo bloginfo('template_directory'); ?>/assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css"> -->
-  
+   <!-- animatat css  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
    <!-- font -->
-   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <!--  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-   
+    -->
    <?php wp_deregister_script('jquery');wp_head(); ?>
    <meta property="og:image" content="<?php echo bloginfo('template_directory'); ?>/assets/images/no-post-img.jpg?v=1" />
    <link rel="stylesheet" href="<?php bloginfo( 'stylesheet_url' ); ?>?v=3" />
@@ -117,28 +118,15 @@
             <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
 <style>
-body{
-    background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/bg_pattern7-2x.png');
-    background-size: auto;
-}
-#header-row {
-    background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/bg_pattern6.png');
-    background-size: contain;
-    }
-<?php if($is_child): ?>
-    body{
-        background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/bg_pattern1.png');
-        background-size: auto;
-    }
-    #header-row {
-        background-image: none; 
-        background-color: white;
-        /*url(https://bauet.ac.bd/wp-content/uploads/2020/12/mozaic2.png);*/
-        background-size: contain;
-    }
+
+ <?php if($is_child): ?>
+
 <?php  endif; ?>    
 
 /************************ start header style ***************************************/
+ #header-row  {
+  position:absolute;
+ }
  .header-top {
        overflow: hidden;
 
@@ -180,7 +168,7 @@ color: #EB5767;
 #top-bar-notice a 
 {
 font-size: 12px;
-margin-top: 2px;
+margin-top: 8px;
 display: inline-block;
 }
 #top-bar-notice a:hover {
@@ -234,9 +222,7 @@ text-decoration:none;
             opacity: 1;
         }
     }
-
 /*  end blink effect */
-
     .header-top-area ul {
      list-style: none;
      display: flex;
@@ -512,9 +498,6 @@ text-decoration:none;
     }
 
 }
-
-
-
     @media only screen and (max-width:768px) {
        /* header logo and title area  */
        .logo {
@@ -692,22 +675,14 @@ text-decoration:none;
             position: absolute;
             right: 27px;
             top: 10px;
-
-
-        }
-        
-        
+          }
         .jsnav-header .jsnav-header-wrapper .jsnav-menu li > ul ul{
             top: 0px;
         }
         .mobile-menu{
             display: none;
-        }
-          
-        
-        
+        }   
     }
-
 </style>
 
 </head>
