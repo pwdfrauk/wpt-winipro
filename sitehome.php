@@ -28,7 +28,7 @@ $isShowHtmlSec_1 = $uni_pro['btnHtmlSec-1'];
 </div>academics-notice.php
 
 <!-- ============ academic ======================= -->
-<?php  get_template_part( "components/academics-notice" );?>
+<?php  get_template_part( "components/home-list/academics-notice" );?>
 
 <!-- =========  message section start  ============== -->
 <!-- ?php  get_template_part( "components/message-box" );?> -->
@@ -43,10 +43,10 @@ $isShowHtmlSec_1 = $uni_pro['btnHtmlSec-1'];
 <!-- ---- news & event end---- -->
 
 <!-- ============ gallary ======================= -->
-<?php  get_template_part( "components/gallary" );?>
+<?php  get_template_part( "components/home-list/gallary" );?>
 
 <!-- ============ why we best ======================= -->
-<?php  get_template_part( "components/why-choice-us" );?>
+<?php  get_template_part( "components/home-list/why-choice-us" );?>
 
 <!-- ====== People start =====  -->
 <!--?php get_template_part( "components/home-list/raw" ) ?>-->
